@@ -1,0 +1,189 @@
+prompt,label
+"What is 2+2?",weak
+"Summarize this email in one sentence.",weak
+"Rewrite this sentence to sound more polite.",weak
+"Give me three title ideas for a blog post about coffee.",weak
+"Translate 'good morning' to Spanish.",weak
+"List five healthy snacks.",weak
+"Fix the grammar in this paragraph.",weak
+"Write a short birthday message for my friend.",weak
+"What does HTTP stand for?",weak
+"Explain photosynthesis in two sentences.",weak
+"Generate a simple to-do list template.",weak
+"What are the colors of the rainbow?",weak
+"Write a short product description for a notebook.",weak
+"Convert this sentence to bullet points.",weak
+"Give me three synonyms for 'important'.",weak
+"Explain what a variable is in programming.",weak
+"Create a catchy caption for a travel photo.",weak
+"Draft a polite reminder email for a meeting.",weak
+"Suggest a name for a bakery.",weak
+"What is the capital of Japan?",weak
+"Turn these notes into a short paragraph.",weak
+"Write a one-line slogan for a fitness app.",weak
+"Explain the difference between a cat and a dog.",weak
+"How do I boil an egg?",weak
+"List basic laptop maintenance tips.",weak
+"Write a simple thank-you note.",weak
+"Create a short agenda for a 15-minute standup.",weak
+"What is a database?",weak
+"Give me beginner tips for public speaking.",weak
+"Make this sentence more professional.",weak
+"Write a fun icebreaker question.",weak
+"Explain what an API is in plain English.",weak
+"What is the opposite of success?",weak
+"Create three tweet ideas about productivity.",weak
+"Suggest a subject line for a sales email.",weak
+"How do I center a div in CSS?",weak
+"Write a basic apology message to a customer.",weak
+"List three benefits of drinking water.",weak
+"Summarize this paragraph for a sixth grader.",weak
+"Generate a basic study schedule for exams.",weak
+"What is machine learning?",weak
+"Write a short welcome message for a website.",weak
+"How do I rename a file in Windows?",weak
+"Give me a simple definition of inflation.",weak
+"Turn this feedback into kinder wording.",weak
+"List common interview questions.",weak
+"Draft a short follow-up email after an interview.",weak
+"What does CPU mean?",weak
+"Explain cloud storage simply.",weak
+"Write a one-paragraph introduction about teamwork.",weak
+"Suggest a logo tagline for a local cafe.",weak
+"List easy weekend activities.",weak
+"Help me word a meeting cancellation text.",weak
+"What is the purpose of a router?",weak
+"Give me a short outline for a presentation on recycling.",weak
+"Rewrite this sentence to sound more confident.",weak
+"Create a short FAQ answer about shipping times.",weak
+"What is version control?",weak
+"List five simple side hustle ideas.",weak
+"Write a gentle payment reminder message.",weak
+"Summarize the plot of Cinderella.",weak
+"Suggest names for a pet adoption campaign.",weak
+"How do I clear browser cache?",weak
+"Make this paragraph easier to read.",weak
+"Give me a simple sales pitch for a water bottle.",weak
+"What is the difference between RAM and storage?",weak
+"Write a quick note asking for feedback.",weak
+"List basic cybersecurity tips for employees.",weak
+"Draft a simple LinkedIn bio for a student.",weak
+"Explain a spreadsheet in plain language.",weak
+"Compare tea and coffee briefly.",weak
+"I need a Python function that reads a CSV of support tickets, cleans missing subject lines, filters to open tickets, groups by priority, and returns a summary dictionary.",moderate
+"Help me design a SQL query to join orders and customers, filter for the last 30 days, and compute average order value per city.",moderate
+"Write a professional project update email that explains a one-week delay, names the dependency risk, and proposes a revised timeline.",moderate
+"I am building a small Flask app with login and registration. Show me a secure folder structure and explain where password hashing should happen.",moderate
+"Summarize these meeting notes and turn them into action items grouped by owner and due date.",moderate
+"Create a study plan for 8 weeks to prepare for data structures interviews, with weekly goals and practice suggestions.",moderate
+"Refactor this JavaScript function to be more readable and handle null values safely.",moderate
+"Suggest how to normalize this database schema for users, subscriptions, and invoices without overcomplicating the design.",moderate
+"Write a polite but firm response to a client asking for out-of-scope work for free.",moderate
+"Explain why this Docker build might be slow and give three concrete optimization ideas.",moderate
+"Draft an API spec for an endpoint that creates support tickets and returns validation errors consistently.",moderate
+"Compare FastAPI and Flask for a small internal tool that may later need async integrations.",moderate
+"Help me debug why my pandas merge is duplicating rows after joining on customer_id.",moderate
+"Turn this rough feature request into clear acceptance criteria and edge cases.",moderate
+"Create a pricing comparison table for three SaaS tiers and recommend which one suits a team of 20.",moderate
+"Write unit tests for a function that calculates shipping cost with discounts and region-specific taxes.",moderate
+"Show me how to call the Ollama HTTP API from Python and parse the JSON response.",moderate
+"I need a Bash script that archives logs older than 7 days and writes a short status summary.",moderate
+"Explain this stack trace and give the most likely root cause plus the first two fixes to try.",moderate
+"Build a regex that validates invoice IDs like INV-2026-0042 and explain each part.",moderate
+"Generate interview questions for a junior backend engineer focused on Python, APIs, and SQL.",moderate
+"Write a product requirements summary for an admin dashboard that tracks tickets, SLAs, and agent workload.",moderate
+"Help me design a retry strategy for calling an external API that occasionally returns 429.",moderate
+"Create sample JSON payloads for a webhook that reports payment success, failure, and refund events.",moderate
+"Suggest a clean architecture for a prompt router that classifies requests before sending them to different models.",moderate
+"Review this resume bullet list and rewrite it to emphasize impact and ownership.",moderate
+"Draft a troubleshooting runbook for a service that has high latency but low CPU usage.",moderate
+"Explain how to estimate token cost for API model calls in a rough but practical way.",moderate
+"Write a SQL migration to add a nullable status column with a sensible default for new rows.",moderate
+"Help me break this broad feature into a one-week MVP and a later phase-two backlog.",moderate
+"Create a customer survey with ten questions to validate interest in an AI writing assistant.",moderate
+"Show me how to store prompt, chosen model, latency, and cost in SQLite from a FastAPI app.",moderate
+"Why might logistic regression work well as a first text classifier for route selection?",moderate
+"Write a Python class that wraps local model calls and returns response text plus latency.",moderate
+"Turn this bug report into a reproducible issue template with expected and actual behavior sections.",moderate
+"Design a simple confidence-based fallback rule so low-certainty classifications escalate to a stronger model.",moderate
+"Suggest metrics to track for an LLM router during week one and explain why each matters.",moderate
+"Create a one-page technical design for a service that routes prompts to weak, moderate, or strong models.",moderate
+"Rewrite this onboarding guide so a new intern can follow it without prior project context.",moderate
+"Help me compare SQLite and Postgres for an MVP that logs prompt routing decisions.",moderate
+"Show me a Python example using scikit-learn TF-IDF with train test split and joblib save/load.",moderate
+"Write a concise README section that explains how to run the API and dashboard locally.",moderate
+"What edge cases should I test for a route endpoint that accepts arbitrary user prompts?",moderate
+"Draft a JSON schema for validating a request body with prompt and optional user_id fields.",moderate
+"Improve this prompt so the model returns structured JSON instead of a loose paragraph.",moderate
+"Create a risk register for a week-one prototype that mixes local and API-based language models.",moderate
+"Help me write a script that measures average response latency over 20 prompt samples.",moderate
+"Give me a checklist for deploying a FastAPI app behind Nginx on a small VM.",moderate
+"Explain why my text classifier may confuse medium and strong prompts and how to reduce that.",moderate
+"Create a dashboard layout that shows route counts, average latency, and cumulative estimated cost.",moderate
+"Suggest labels and examples for weak, moderate, and strong prompts so humans can annotate consistently.",moderate
+"Write a docstring and type hints for a function that predicts a route and chooses a model.",moderate
+"Help me make this customer support macro sound empathetic but still concise.",moderate
+"Design a prompt template for summarizing incidents into impact, root cause, and next steps.",moderate
+"Show how to read environment variables for API keys in Python without hardcoding secrets.",moderate
+"Create a mock response generator so I can test the router before real model integrations exist.",moderate
+"Explain the tradeoff between routing aggressively to cheap models and protecting answer quality.",moderate
+"Write a Python function to compute precision, recall, and confusion matrix for three classes.",moderate
+"Turn these raw support chats into labeled examples for easy, medium, and hard routing.",moderate
+"Suggest a naming convention for model adapters and routing decisions in this codebase.",moderate
+"How should I log failures when the external strong model API times out?",moderate
+"Draft a lightweight database schema for storing prompts, predictions, chosen model, latency, cost, and timestamp.",moderate
+"Write a changelog entry describing the first working MVP of an LLM router.",moderate
+"I want a production-ready architecture for a multi-tenant LLM routing platform that classifies prompts by domain, sensitivity, and complexity, applies policy constraints, estimates token budgets, chooses among local Ollama models and multiple external providers, performs fallback and retry orchestration, logs every decision for audit, and exposes metrics for cost and quality analysis.",strong
+"Design an evaluation strategy for an LLM router that combines offline classification metrics, online A/B tests, human preference judgments, response quality scoring rubrics, and drift detection over prompt distributions.",strong
+"Write a detailed technical design for a resilient routing layer that supports streaming responses, provider outages, per-customer budgets, dynamic confidence thresholds, and asynchronous background evaluation jobs.",strong
+"Given this incident timeline, infer likely systemic causes across model selection, caching, rate limiting, and queue backpressure, then propose short-term mitigation and longer-term architecture changes.",strong
+"Create a step-by-step migration plan from a single FastAPI service into event-driven microservices while preserving audit trails, low latency, and tenant isolation.",strong
+"Help me design a benchmark suite that tests local and API LLMs across summarization, reasoning, extraction, code generation, and safety-sensitive prompts with weighted scoring.",strong
+"I need a policy engine design that routes prompts based on PII detection, jurisdiction, confidentiality level, and allowed providers, including explainable deny reasons.",strong
+"Propose a robust fallback graph for weak, moderate, and strong models that considers confidence, prior failure rate, current latency percentile, and budget exhaustion.",strong
+"Write a deeply reasoned plan for collecting human-labeled routing data, measuring annotator agreement, resolving ambiguity, and updating labels over time.",strong
+"Design the full backend modules for training, inference, provider abstraction, cost estimation, persistence, observability, and admin controls for an LLM router.",strong
+"Given a messy corpus of historical prompts and outcomes, define a data strategy for feature extraction, label bootstrapping, active learning, and periodic retraining.",strong
+"Explain how to calibrate classifier probabilities and use them safely in routing decisions that affect both cost and answer quality.",strong
+"Create a deployment architecture for a hybrid local plus cloud LLM router with autoscaling, secrets management, rollback strategy, and regional failover.",strong
+"Write an implementation roadmap that sequences prototype, internal alpha, external beta, and production hardening milestones with measurable exit criteria.",strong
+"Design a schema evolution plan for prompt logs that later adds feedback scores, token counts, provider trace IDs, and evaluation annotations without breaking queries.",strong
+"Propose a mechanism for real-time provider health scoring that influences routing weights while avoiding oscillation and cascading failures.",strong
+"I want a complete observability approach covering structured logs, traces, metrics, alert thresholds, and dashboard slices for model routing decisions.",strong
+"Compare local quantized models versus premium API models for a business-critical router using dimensions like cost, latency variability, privacy, maintenance overhead, and failure modes.",strong
+"Define a rigorous offline experiment to test whether a confidence threshold of 0.55 or 0.70 gives better cost-quality tradeoffs across three prompt classes.",strong
+"Design an annotation guide that distinguishes prompt complexity from domain knowledge requirements and output criticality so labels are consistent.",strong
+"Create a secure multi-provider credential strategy with rotation, scoping, tenant overrides, auditability, and incident response steps.",strong
+"Help me reason about whether a single multiclass classifier is enough or whether we should move to hierarchical routing with specialist detectors.",strong
+"Write a detailed plan for evaluating hallucination risk across routed responses and feeding that signal back into model choice.",strong
+"Propose a quality estimation subsystem that predicts when a cheap-model answer is likely inadequate even before the answer is generated.",strong
+"Design a governance workflow for approving new models into the router, including security review, benchmark gates, rollback criteria, and documentation.",strong
+"I need a serious threat model for an LLM router that handles proprietary code, customer tickets, and regulated data.",strong
+"Explain how to combine rule-based routing, classifier output, and provider constraints without creating contradictory decisions.",strong
+"Draft a vendor-neutral provider adapter interface that supports sync and async calls, streaming, usage accounting, and structured errors.",strong
+"Create a plan for synthetic data generation that augments rare strong prompts without distorting the real prompt distribution.",strong
+"Define the database and storage strategy for retaining raw prompts, redacted prompts, responses, embeddings, and evaluation artifacts under retention policies.",strong
+"Help me decide whether routing should happen before retrieval, after retrieval, or in two stages for a RAG-heavy product.",strong
+"Write a design for budget-aware routing where each tenant has monthly caps, burst allowances, and downgrade behavior when nearing limits.",strong
+"Propose how to use human feedback and outcome data to retrain both the classifier and routing policy without introducing harmful feedback loops.",strong
+"Create a comprehensive test strategy spanning unit, integration, load, chaos, and regression tests for the LLM router platform.",strong
+"Explain the tradeoffs of using TF-IDF plus logistic regression now versus transformers or embeddings later, with a migration path that preserves comparability.",strong
+"Design a redaction pipeline that strips secrets and PII before prompts leave the local boundary, while keeping enough context for strong-model quality.",strong
+"Given these hypothetical traffic patterns, estimate infrastructure bottlenecks and propose queueing, batching, and caching policies.",strong
+"Write a plan for route-explanation features so operators can see why a prompt was sent to a given model and whether fallback rules were involved.",strong
+"Define how to monitor prompt distribution drift, class imbalance, and calibration decay, and when to trigger retraining.",strong
+"Propose a benchmarking harness that records latency distributions, answer ratings, token usage, and provider-specific failure patterns.",strong
+"Design an experiment to compare several local Ollama models for the weak and moderate tiers using representative prompt sets and rubric-based scoring.",strong
+"Create a detailed API contract for a routing service that supports synchronous route calls, async batch jobs, and admin analytics endpoints.",strong
+"Help me think through legal, privacy, and compliance implications of shipping prompts to third-party providers in different regions.",strong
+"Write an architecture for serving classification and routing decisions with low cold-start latency and safe model reloads.",strong
+"Design a method to estimate expected answer quality before generation using prompt features, historical outcomes, and task category.",strong
+"Outline how to introduce canary releases for new models and routing rules with automatic rollback on quality or latency regression.",strong
+"Create a feedback ingestion design so users can rate answers, flag failures, and tie that back to routing analytics.",strong
+"I need a robust schema and event model for capturing every routing decision, fallback, retry, provider error, and final outcome.",strong
+"Show how we could evolve this MVP into an enterprise routing control plane with policy authoring, experiments, dashboards, and audit review.",strong
+"Design a practical but rigorous framework for measuring business ROI of the router across latency, cost savings, and answer acceptability.",strong
+"Explain how to avoid proxy metrics leading the router to optimize cost while silently harming user outcomes.",strong
+"Create a decision memo comparing monolithic versus modular service design for the first six months of the router project.",strong
+"Write a deep dive on failure handling when the local moderate model degrades gradually instead of failing outright.",strong
+"Propose how to separate prompt complexity, risk sensitivity, and output-format strictness into different signals for routing.",strong
