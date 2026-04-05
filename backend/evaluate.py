@@ -4,13 +4,13 @@ import json
 from pathlib import Path
 
 import joblib
-import pandas as pd
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 
+from backend.dataset import load_prompt_datasets
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_PATH = BASE_DIR / "data" / "prompts.csv"
 MODEL_PATH = BASE_DIR / "models" / "classifier.pkl"
 EVAL_PATH = BASE_DIR / "models" / "evaluation.json"
 
@@ -19,7 +19,7 @@ def main() -> None:
     if not MODEL_PATH.exists():
         raise FileNotFoundError(f"Model file not found at {MODEL_PATH}. Train first.")
 
-    df = pd.read_csv(DATA_PATH)
+    df = load_prompt_datasets()
     _, x_test, _, y_test = train_test_split(
         df["prompt"],
         df["label"],

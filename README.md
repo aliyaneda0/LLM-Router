@@ -33,6 +33,7 @@ llm-router/
 ## How It Works
 
 1. We manually label prompts as `weak`, `moderate`, or `strong`.
+   The trainer now reads every `prompts*.csv` file in `data/` and combines them.
 2. We train a TF-IDF + calibrated Logistic Regression classifier.
 3. The classifier predicts prompt difficulty.
 4. The router maps the predicted class to a model:
@@ -60,11 +61,19 @@ copy .env.example .env
 
 Then edit `.env` and put your real values there. The app loads `.env` automatically.
 
+For Gemini 2.5 Pro, set:
+
+```powershell
+STRONG_API_PROVIDER=gemini
+STRONG_API_MODEL=gemini-2.5-pro
+GEMINI_API_KEY=your_google_ai_studio_key
+```
+
 Train:
 
 ```powershell
-.\.venv\Scripts\python.exe backend\train.py
-.\.venv\Scripts\python.exe backend\evaluate.py
+.\.venv\Scripts\python.exe -m backend.train
+.\.venv\Scripts\python.exe -m backend.evaluate
 ```
 
 Start API:
@@ -83,8 +92,10 @@ Start dashboard:
 
 - Local model calls go to Ollama at `OLLAMA_BASE_URL`.
 - Set your local model names with `LOCAL_WEAK_MODEL` and `LOCAL_MODERATE_MODEL`.
+- Set your strong provider with `STRONG_API_PROVIDER` (`openai` or `gemini`).
 - Set your cloud/API model with `STRONG_API_MODEL`.
-- Set `OPENAI_API_KEY` before using the strong API model.
+- Set `OPENAI_API_KEY` before using the OpenAI strong model.
+- Set `GEMINI_API_KEY` before using the Gemini strong model.
 
 ## Database
 
@@ -113,7 +124,7 @@ Use it for:
 - `backend/train.py`: trains and saves the classifier.
 - `backend/evaluate.py`: measures classifier quality and writes reusable metrics.
 - `backend/predict.py`: loads the saved classifier and returns prediction probabilities.
-- `backend/router.py`: chooses the model and calls Ollama or the API provider.
+- `backend/router.py`: chooses the model and calls Ollama, OpenAI, or Gemini.
 - `backend/db.py`: creates the SQLite schema and stores routing logs.
 - `backend/api.py`: exposes `/route`, `/health`, and `/analytics/summary`.
 - `frontend/dashboard.py`: displays logs and high-level metrics in Streamlit.

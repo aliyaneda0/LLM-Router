@@ -51,6 +51,14 @@ def call_ollama(prompt: str, model_name: str) -> tuple[str, float]:
 
 def call_strong_api(prompt: str, model_name: str) -> tuple[str, float, float]:
     settings = get_settings()
+    provider = settings.strong_api_provider
+    if provider == "gemini":
+        return call_gemini_api(prompt, model_name)
+    return call_openai_api(prompt, model_name)
+
+
+def call_openai_api(prompt: str, model_name: str) -> tuple[str, float, float]:
+    settings = get_settings()
     start = time.perf_counter()
     api_key = settings.openai_api_key
     if not api_key:
@@ -79,7 +87,7 @@ def call_strong_api(prompt: str, model_name: str) -> tuple[str, float, float]:
         usage = payload.get("usage", {})
         input_tokens = usage.get("input_tokens", 0)
         output_tokens = usage.get("output_tokens", 0)
-        estimated_cost = estimate_cost(model_name, input_tokens, output_tokens)
+        estimated_cost = estimate_cost("openai", model_name, input_tokens, output_tokens)
     except requests.RequestException as exc:
         text = f"[strong API unavailable: {exc}]"
         estimated_cost = 0.0
@@ -88,11 +96,62 @@ def call_strong_api(prompt: str, model_name: str) -> tuple[str, float, float]:
     return text, latency_ms, estimated_cost
 
 
-def estimate_cost(model_name: str, input_tokens: int, output_tokens: int) -> float:
-    pricing: dict[str, tuple[float, float]] = {
-        "gpt-4o-mini": (0.15 / 1_000_000, 0.60 / 1_000_000),
+def call_gemini_api(prompt: str, model_name: str) -> tuple[str, float, float]:
+    settings = get_settings()
+    start = time.perf_counter()
+    api_key = settings.gemini_api_key
+    if not api_key:
+        latency_ms = (time.perf_counter() - start) * 1000
+        return "[strong API not configured: set GEMINI_API_KEY]", latency_ms, 0.0
+
+    body = {
+        "contents": [
+            {
+                "parts": [
+                    {
+                        "text": prompt,
+                    }
+                ]
+            }
+        ]
     }
-    input_rate, output_rate = pricing.get(model_name, (0.0, 0.0))
+
+    try:
+        response = requests.post(
+            f"https://generativelanguage.googleapis.com/v1beta/models/{model_name}:generateContent",
+            params={"key": api_key},
+            json=body,
+            timeout=60,
+        )
+        response.raise_for_status()
+        payload = response.json()
+        candidates = payload.get("candidates", [])
+        parts = []
+        if candidates:
+            parts = candidates[0].get("content", {}).get("parts", [])
+        text = "".join(part.get("text", "") for part in parts)
+
+        usage = payload.get("usageMetadata", {})
+        input_tokens = usage.get("promptTokenCount", 0)
+        output_tokens = usage.get("candidatesTokenCount", 0)
+        estimated_cost = estimate_cost("gemini", model_name, input_tokens, output_tokens)
+    except requests.RequestException as exc:
+        text = f"[strong API unavailable: {exc}]"
+        estimated_cost = 0.0
+
+    latency_ms = (time.perf_counter() - start) * 1000
+    return text, latency_ms, estimated_cost
+
+
+def estimate_cost(
+    provider: str, model_name: str, input_tokens: int, output_tokens: int
+) -> float:
+    pricing: dict[tuple[str, str], tuple[float, float]] = {
+        ("openai", "gpt-4o-mini"): (0.15 / 1_000_000, 0.60 / 1_000_000),
+        # Free-tier Gemini usage is often effectively $0 within quota, so keep this at 0.0.
+        ("gemini", "gemini-2.5-pro"): (0.0, 0.0),
+    }
+    input_rate, output_rate = pricing.get((provider, model_name), (0.0, 0.0))
     return round((input_tokens * input_rate) + (output_tokens * output_rate), 6)
 
 

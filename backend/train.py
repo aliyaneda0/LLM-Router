@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from pathlib import Path
 import site
 import sys
 
@@ -9,7 +8,6 @@ if user_site not in sys.path:
     sys.path.append(user_site)
 
 import joblib
-import pandas as pd
 from sklearn.calibration import CalibratedClassifierCV
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
@@ -17,14 +15,14 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 
+from backend.dataset import BASE_DIR, load_prompt_datasets
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-DATA_PATH = BASE_DIR / "data" / "prompts.csv"
+
 MODEL_PATH = BASE_DIR / "models" / "classifier.pkl"
 
 
 def main() -> None:
-    df = pd.read_csv(DATA_PATH)
+    df = load_prompt_datasets()
     if df.empty:
         raise ValueError("Training dataset is empty.")
 

@@ -1,0 +1,88 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [3 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 4966 >>
+stream
+BT /F2 18 Tf 42 756 Td (LLM Router MVP) Tj ET
+BT /F2 11 Tf 42 722 Td (APPLICATION SUMMARY) Tj ET
+BT /F1 9 Tf 42 708 Td (- Purpose: classify incoming prompts as `weak`, `moderate`, or `strong` and send them to the) Tj ET
+BT /F1 9 Tf 42 697 Td (  lowest-cost model that should still answer well.) Tj ET
+BT /F1 9 Tf 42 686 Td (- User flow: client sends a prompt to FastAPI `/route`, the classifier scores complexity, the) Tj ET
+BT /F1 9 Tf 42 675 Td (  router picks a model, the model response is returned, and the event is logged to SQLite.) Tj ET
+BT /F1 9 Tf 42 664 Td (- Local models: Ollama-hosted `LOCAL_WEAK_MODEL` and `LOCAL_MODERATE_MODEL`.) Tj ET
+BT /F1 9 Tf 42 653 Td (- Strong model: configurable cloud/API model via `STRONG_API_PROVIDER` and `STRONG_API_MODEL`) Tj ET
+BT /F1 9 Tf 42 642 Td (  \(`openai` or `gemini`\).) Tj ET
+BT /F1 9 Tf 42 631 Td (- Safety rule: if prediction confidence is below `0.55`, the system falls back to the strong) Tj ET
+BT /F1 9 Tf 42 620 Td (  model.) Tj ET
+BT /F2 11 Tf 42 599 Td (CORE FEATURES) Tj ET
+BT /F1 9 Tf 42 585 Td (- Cost-aware routing instead of always calling the most expensive model.) Tj ET
+BT /F1 9 Tf 42 574 Td (- Confidence-based fallback to reduce bad low-tier routing decisions.) Tj ET
+BT /F1 9 Tf 42 563 Td (- Config-driven providers and model names through `.env`.) Tj ET
+BT /F1 9 Tf 42 552 Td (- Persistent logging of prompt, class, confidence, model, fallback flag, route reason,) Tj ET
+BT /F1 9 Tf 42 541 Td (  latency, cost, response, and timestamp.) Tj ET
+BT /F1 9 Tf 42 530 Td (- Streamlit dashboard for route counts, fallback counts, latency, cost, and recent logs.) Tj ET
+BT /F1 9 Tf 42 519 Td (- Offline training and saved evaluation artifacts for demos and model discussions.) Tj ET
+BT /F2 11 Tf 42 498 Td (ARCHITECTURE CHOICE) Tj ET
+BT /F1 9 Tf 42 484 Td (- Frontend: Streamlit dashboard for fast MVP analytics and demoability.) Tj ET
+BT /F1 9 Tf 42 473 Td (- API layer: FastAPI exposes `/health`, `/route`, and `/analytics/summary`.) Tj ET
+BT /F1 9 Tf 42 462 Td (- ML layer: TF-IDF + calibrated Logistic Regression in a scikit-learn pipeline.) Tj ET
+BT /F1 9 Tf 42 451 Td (- Routing layer: deterministic policy maps class + confidence to model choice.) Tj ET
+BT /F1 9 Tf 42 440 Td (- Storage: SQLite is enough for MVP simplicity and observability.) Tj ET
+BT /F1 9 Tf 42 429 Td (- Config: environment variables keep provider switching and deployment simple.) Tj ET
+BT /F2 11 Tf 42 408 Td (WHY THESE CHOICES MAKE SENSE) Tj ET
+BT /F1 9 Tf 42 394 Td (- TF-IDF + Logistic Regression is lightweight, fast, interpretable, and strong for short-text) Tj ET
+BT /F1 9 Tf 42 383 Td (  classification.) Tj ET
+BT /F1 9 Tf 42 372 Td (- Calibration matters because routing decisions depend on confidence, not only predicted) Tj ET
+BT /F1 9 Tf 42 361 Td (  label.) Tj ET
+BT /F1 9 Tf 42 350 Td (- FastAPI keeps inference endpoints clean and production-friendly.) Tj ET
+BT /F1 9 Tf 42 339 Td (- SQLite reduces setup friction while still giving persistent analytics.) Tj ET
+BT /F1 9 Tf 42 328 Td (- Streamlit speeds up stakeholder demos without building a full custom frontend.) Tj ET
+BT /F2 11 Tf 42 307 Td (EVIDENCE FROM CURRENT BUILD) Tj ET
+BT /F1 9 Tf 42 293 Td (- Training combines every `prompts*.csv` file, cleans rows, and removes duplicates.) Tj ET
+BT /F1 9 Tf 42 282 Td (- Current saved evaluation accuracy: `96.64%`.) Tj ET
+BT /F1 9 Tf 42 271 Td (- Confusion matrix shows only a small number of class mix-ups across `weak`, `moderate`, and) Tj ET
+BT /F1 9 Tf 42 260 Td (  `strong`.) Tj ET
+BT /F2 11 Tf 42 239 Td (INTERVIEW QUESTIONS) Tj ET
+BT /F1 9 Tf 42 225 Td (1. Why did you choose a classifier before generation instead of routing with hand-written) Tj ET
+BT /F1 9 Tf 42 214 Td (rules only?) Tj ET
+BT /F1 9 Tf 42 203 Td (2. Why use TF-IDF + Logistic Regression over embeddings or an LLM judge for the MVP?) Tj ET
+BT /F1 9 Tf 42 192 Td (3. Why did you calibrate the classifier, and how does calibration improve routing quality?) Tj ET
+BT /F1 9 Tf 42 181 Td (4. Why is the fallback threshold `0.55`, and how would you tune it in production?) Tj ET
+BT /F1 9 Tf 42 170 Td (5. How do you balance latency, quality, and cost across weak, moderate, and strong models?) Tj ET
+BT /F1 9 Tf 42 159 Td (6. Why use Ollama for local models and OpenAI/Gemini for the strong tier?) Tj ET
+BT /F1 9 Tf 42 148 Td (7. What happens when a local model or API provider is unavailable?) Tj ET
+BT /F1 9 Tf 42 137 Td (8. Why store logs in SQLite first, and when would you move to Postgres?) Tj ET
+BT /F1 9 Tf 42 126 Td (9. How would you detect misroutes and use the logged data for retraining?) Tj ET
+BT /F1 9 Tf 42 115 Td (10. How would you expand the router to support more classes, tenants, or providers?) Tj ET
+BT /F1 9 Tf 42 104 Td (11. What are the main risks of this architecture, and how would you mitigate them?) Tj ET
+BT /F1 9 Tf 42 93 Td (12. If traffic grows, which layer would you scale or redesign first?) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000005269 00000 n 
+0000005339 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+5414
+%%EOF

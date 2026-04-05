@@ -1,0 +1,1001 @@
+id,prompt,label
+1,What is artificial intelligence?,weak
+2,Define machine learning,weak
+3,What is cloud computing?,weak
+4,Define database,weak
+5,What is an algorithm?,weak
+6,Define operating system,weak
+7,What is HTTP?,weak
+8,Define API,weak
+9,What is blockchain?,weak
+10,Define cybersecurity,weak
+11,What is data science?,weak
+12,Define neural network,weak
+13,What is Python?,weak
+14,Define Java,weak
+15,What is HTML?,weak
+16,Define CSS,weak
+17,What is RAM?,weak
+18,Define CPU,weak
+19,What is internet?,weak
+20,Define DNS,weak
+21,List 5 fruits,weak
+22,List 5 programming languages,weak
+23,List 5 countries,weak
+24,List 5 cities in India,weak
+25,List 5 animals,weak
+26,List 5 car brands,weak
+27,List 5 sports,weak
+28,List 5 colors,weak
+29,List 5 databases,weak
+30,List 5 cloud providers,weak
+31,Translate 'hello' to Hindi,weak
+32,Translate 'thank you' to Spanish,weak
+33,Translate 'good morning' to French,weak
+34,Translate 'good night' to German,weak
+35,Translate 'welcome' to Arabic,weak
+36,Translate 'sorry' to Italian,weak
+37,Translate 'please' to Korean,weak
+38,Translate 'yes' to Russian,weak
+39,Translate 'no' to Japanese,weak
+40,Translate 'good evening' to Urdu,weak
+41,What is artificial intelligence?,weak
+42,Define machine learning,weak
+43,What is cloud computing?,weak
+44,Define database,weak
+45,What is an algorithm?,weak
+46,Define operating system,weak
+47,What is HTTP?,weak
+48,Define API,weak
+49,What is blockchain?,weak
+50,Define cybersecurity,weak
+51,What is data science?,weak
+52,Define neural network,weak
+53,What is Python?,weak
+54,Define Java,weak
+55,What is HTML?,weak
+56,Define CSS,weak
+57,What is RAM?,weak
+58,Define CPU,weak
+59,What is internet?,weak
+60,Define DNS,weak
+61,List 5 fruits,weak
+62,List 5 programming languages,weak
+63,List 5 countries,weak
+64,List 5 cities in India,weak
+65,List 5 animals,weak
+66,List 5 car brands,weak
+67,List 5 sports,weak
+68,List 5 colors,weak
+69,List 5 databases,weak
+70,List 5 cloud providers,weak
+71,Translate 'hello' to Hindi,weak
+72,Translate 'thank you' to Spanish,weak
+73,Translate 'good morning' to French,weak
+74,Translate 'good night' to German,weak
+75,Translate 'welcome' to Arabic,weak
+76,Translate 'sorry' to Italian,weak
+77,Translate 'please' to Korean,weak
+78,Translate 'yes' to Russian,weak
+79,Translate 'no' to Japanese,weak
+80,Translate 'good evening' to Urdu,weak
+81,What is artificial intelligence?,weak
+82,Define machine learning,weak
+83,What is cloud computing?,weak
+84,Define database,weak
+85,What is an algorithm?,weak
+86,Define operating system,weak
+87,What is HTTP?,weak
+88,Define API,weak
+89,What is blockchain?,weak
+90,Define cybersecurity,weak
+91,What is data science?,weak
+92,Define neural network,weak
+93,What is Python?,weak
+94,Define Java,weak
+95,What is HTML?,weak
+96,Define CSS,weak
+97,What is RAM?,weak
+98,Define CPU,weak
+99,What is internet?,weak
+100,Define DNS,weak
+101,List 5 fruits,weak
+102,List 5 programming languages,weak
+103,List 5 countries,weak
+104,List 5 cities in India,weak
+105,List 5 animals,weak
+106,List 5 car brands,weak
+107,List 5 sports,weak
+108,List 5 colors,weak
+109,List 5 databases,weak
+110,List 5 cloud providers,weak
+111,Translate 'hello' to Hindi,weak
+112,Translate 'thank you' to Spanish,weak
+113,Translate 'good morning' to French,weak
+114,Translate 'good night' to German,weak
+115,Translate 'welcome' to Arabic,weak
+116,Translate 'sorry' to Italian,weak
+117,Translate 'please' to Korean,weak
+118,Translate 'yes' to Russian,weak
+119,Translate 'no' to Japanese,weak
+120,Translate 'good evening' to Urdu,weak
+121,What is artificial intelligence?,weak
+122,Define machine learning,weak
+123,What is cloud computing?,weak
+124,Define database,weak
+125,What is an algorithm?,weak
+126,Define operating system,weak
+127,What is HTTP?,weak
+128,Define API,weak
+129,What is blockchain?,weak
+130,Define cybersecurity,weak
+131,What is data science?,weak
+132,Define neural network,weak
+133,What is Python?,weak
+134,Define Java,weak
+135,What is HTML?,weak
+136,Define CSS,weak
+137,What is RAM?,weak
+138,Define CPU,weak
+139,What is internet?,weak
+140,Define DNS,weak
+141,List 5 fruits,weak
+142,List 5 programming languages,weak
+143,List 5 countries,weak
+144,List 5 cities in India,weak
+145,List 5 animals,weak
+146,List 5 car brands,weak
+147,List 5 sports,weak
+148,List 5 colors,weak
+149,List 5 databases,weak
+150,List 5 cloud providers,weak
+151,Translate 'hello' to Hindi,weak
+152,Translate 'thank you' to Spanish,weak
+153,Translate 'good morning' to French,weak
+154,Translate 'good night' to German,weak
+155,Translate 'welcome' to Arabic,weak
+156,Translate 'sorry' to Italian,weak
+157,Translate 'please' to Korean,weak
+158,Translate 'yes' to Russian,weak
+159,Translate 'no' to Japanese,weak
+160,Translate 'good evening' to Urdu,weak
+161,What is artificial intelligence?,weak
+162,Define machine learning,weak
+163,What is cloud computing?,weak
+164,Define database,weak
+165,What is an algorithm?,weak
+166,Define operating system,weak
+167,What is HTTP?,weak
+168,Define API,weak
+169,What is blockchain?,weak
+170,Define cybersecurity,weak
+171,What is data science?,weak
+172,Define neural network,weak
+173,What is Python?,weak
+174,Define Java,weak
+175,What is HTML?,weak
+176,Define CSS,weak
+177,What is RAM?,weak
+178,Define CPU,weak
+179,What is internet?,weak
+180,Define DNS,weak
+181,List 5 fruits,weak
+182,List 5 programming languages,weak
+183,List 5 countries,weak
+184,List 5 cities in India,weak
+185,List 5 animals,weak
+186,List 5 car brands,weak
+187,List 5 sports,weak
+188,List 5 colors,weak
+189,List 5 databases,weak
+190,List 5 cloud providers,weak
+191,Translate 'hello' to Hindi,weak
+192,Translate 'thank you' to Spanish,weak
+193,Translate 'good morning' to French,weak
+194,Translate 'good night' to German,weak
+195,Translate 'welcome' to Arabic,weak
+196,Translate 'sorry' to Italian,weak
+197,Translate 'please' to Korean,weak
+198,Translate 'yes' to Russian,weak
+199,Translate 'no' to Japanese,weak
+200,Translate 'good evening' to Urdu,weak
+201,What is artificial intelligence?,weak
+202,Define machine learning,weak
+203,What is cloud computing?,weak
+204,Define database,weak
+205,What is an algorithm?,weak
+206,Define operating system,weak
+207,What is HTTP?,weak
+208,Define API,weak
+209,What is blockchain?,weak
+210,Define cybersecurity,weak
+211,What is data science?,weak
+212,Define neural network,weak
+213,What is Python?,weak
+214,Define Java,weak
+215,What is HTML?,weak
+216,Define CSS,weak
+217,What is RAM?,weak
+218,Define CPU,weak
+219,What is internet?,weak
+220,Define DNS,weak
+221,List 5 fruits,weak
+222,List 5 programming languages,weak
+223,List 5 countries,weak
+224,List 5 cities in India,weak
+225,List 5 animals,weak
+226,List 5 car brands,weak
+227,List 5 sports,weak
+228,List 5 colors,weak
+229,List 5 databases,weak
+230,List 5 cloud providers,weak
+231,Translate 'hello' to Hindi,weak
+232,Translate 'thank you' to Spanish,weak
+233,Translate 'good morning' to French,weak
+234,Translate 'good night' to German,weak
+235,Translate 'welcome' to Arabic,weak
+236,Translate 'sorry' to Italian,weak
+237,Translate 'please' to Korean,weak
+238,Translate 'yes' to Russian,weak
+239,Translate 'no' to Japanese,weak
+240,Translate 'good evening' to Urdu,weak
+241,What is artificial intelligence?,weak
+242,Define machine learning,weak
+243,What is cloud computing?,weak
+244,Define database,weak
+245,What is an algorithm?,weak
+246,Define operating system,weak
+247,What is HTTP?,weak
+248,Define API,weak
+249,What is blockchain?,weak
+250,Define cybersecurity,weak
+251,What is data science?,weak
+252,Define neural network,weak
+253,What is Python?,weak
+254,Define Java,weak
+255,What is HTML?,weak
+256,Define CSS,weak
+257,What is RAM?,weak
+258,Define CPU,weak
+259,What is internet?,weak
+260,Define DNS,weak
+261,List 5 fruits,weak
+262,List 5 programming languages,weak
+263,List 5 countries,weak
+264,List 5 cities in India,weak
+265,List 5 animals,weak
+266,List 5 car brands,weak
+267,List 5 sports,weak
+268,List 5 colors,weak
+269,List 5 databases,weak
+270,List 5 cloud providers,weak
+271,Translate 'hello' to Hindi,weak
+272,Translate 'thank you' to Spanish,weak
+273,Translate 'good morning' to French,weak
+274,Translate 'good night' to German,weak
+275,Translate 'welcome' to Arabic,weak
+276,Translate 'sorry' to Italian,weak
+277,Translate 'please' to Korean,weak
+278,Translate 'yes' to Russian,weak
+279,Translate 'no' to Japanese,weak
+280,Translate 'good evening' to Urdu,weak
+281,What is artificial intelligence?,weak
+282,Define machine learning,weak
+283,What is cloud computing?,weak
+284,Define database,weak
+285,What is an algorithm?,weak
+286,Define operating system,weak
+287,What is HTTP?,weak
+288,Define API,weak
+289,What is blockchain?,weak
+290,Define cybersecurity,weak
+291,What is data science?,weak
+292,Define neural network,weak
+293,What is Python?,weak
+294,Define Java,weak
+295,What is HTML?,weak
+296,Define CSS,weak
+297,What is RAM?,weak
+298,Define CPU,weak
+299,What is internet?,weak
+300,Define DNS,weak
+301,List 5 fruits,weak
+302,List 5 programming languages,weak
+303,List 5 countries,weak
+304,List 5 cities in India,weak
+305,List 5 animals,weak
+306,List 5 car brands,weak
+307,List 5 sports,weak
+308,List 5 colors,weak
+309,List 5 databases,weak
+310,List 5 cloud providers,weak
+311,Translate 'hello' to Hindi,weak
+312,Translate 'thank you' to Spanish,weak
+313,Translate 'good morning' to French,weak
+314,Translate 'good night' to German,weak
+315,Translate 'welcome' to Arabic,weak
+316,Translate 'sorry' to Italian,weak
+317,Translate 'please' to Korean,weak
+318,Translate 'yes' to Russian,weak
+319,Translate 'no' to Japanese,weak
+320,Translate 'good evening' to Urdu,weak
+321,What is artificial intelligence?,weak
+322,Define machine learning,weak
+323,What is cloud computing?,weak
+324,Define database,weak
+325,What is an algorithm?,weak
+326,Define operating system,weak
+327,What is HTTP?,weak
+328,Define API,weak
+329,What is blockchain?,weak
+330,Define cybersecurity,weak
+331,What is data science?,weak
+332,Define neural network,weak
+333,What is Python?,weak
+334,Write a Python function to add two numbers,moderate
+335,Write a Python function to check palindrome,moderate
+336,Write a Python function to reverse a string,moderate
+337,Write a Python function to find factorial,moderate
+338,Write a Python function for Fibonacci series,moderate
+339,Write a Python script to read a file,moderate
+340,Write a Python script to sort a list,moderate
+341,Write a Java program for addition,moderate
+342,Write a Java program to check even or odd,moderate
+343,Write a program to find largest number in list,moderate
+344,Explain machine learning with example,moderate
+345,Explain deep learning basics,moderate
+346,Explain cloud computing benefits,moderate
+347,Explain API lifecycle,moderate
+348,Explain database normalization,moderate
+349,Explain OOP concepts,moderate
+350,Explain multithreading,moderate
+351,Explain REST API,moderate
+352,Explain HTTP vs HTTPS,moderate
+353,Explain TCP vs UDP,moderate
+354,Write a Python function to add two numbers,moderate
+355,Write a Python function to check palindrome,moderate
+356,Write a Python function to reverse a string,moderate
+357,Write a Python function to find factorial,moderate
+358,Write a Python function for Fibonacci series,moderate
+359,Write a Python script to read a file,moderate
+360,Write a Python script to sort a list,moderate
+361,Write a Java program for addition,moderate
+362,Write a Java program to check even or odd,moderate
+363,Write a program to find largest number in list,moderate
+364,Explain machine learning with example,moderate
+365,Explain deep learning basics,moderate
+366,Explain cloud computing benefits,moderate
+367,Explain API lifecycle,moderate
+368,Explain database normalization,moderate
+369,Explain OOP concepts,moderate
+370,Explain multithreading,moderate
+371,Explain REST API,moderate
+372,Explain HTTP vs HTTPS,moderate
+373,Explain TCP vs UDP,moderate
+374,Write a Python function to add two numbers,moderate
+375,Write a Python function to check palindrome,moderate
+376,Write a Python function to reverse a string,moderate
+377,Write a Python function to find factorial,moderate
+378,Write a Python function for Fibonacci series,moderate
+379,Write a Python script to read a file,moderate
+380,Write a Python script to sort a list,moderate
+381,Write a Java program for addition,moderate
+382,Write a Java program to check even or odd,moderate
+383,Write a program to find largest number in list,moderate
+384,Explain machine learning with example,moderate
+385,Explain deep learning basics,moderate
+386,Explain cloud computing benefits,moderate
+387,Explain API lifecycle,moderate
+388,Explain database normalization,moderate
+389,Explain OOP concepts,moderate
+390,Explain multithreading,moderate
+391,Explain REST API,moderate
+392,Explain HTTP vs HTTPS,moderate
+393,Explain TCP vs UDP,moderate
+394,Write a Python function to add two numbers,moderate
+395,Write a Python function to check palindrome,moderate
+396,Write a Python function to reverse a string,moderate
+397,Write a Python function to find factorial,moderate
+398,Write a Python function for Fibonacci series,moderate
+399,Write a Python script to read a file,moderate
+400,Write a Python script to sort a list,moderate
+401,Write a Java program for addition,moderate
+402,Write a Java program to check even or odd,moderate
+403,Write a program to find largest number in list,moderate
+404,Explain machine learning with example,moderate
+405,Explain deep learning basics,moderate
+406,Explain cloud computing benefits,moderate
+407,Explain API lifecycle,moderate
+408,Explain database normalization,moderate
+409,Explain OOP concepts,moderate
+410,Explain multithreading,moderate
+411,Explain REST API,moderate
+412,Explain HTTP vs HTTPS,moderate
+413,Explain TCP vs UDP,moderate
+414,Write a Python function to add two numbers,moderate
+415,Write a Python function to check palindrome,moderate
+416,Write a Python function to reverse a string,moderate
+417,Write a Python function to find factorial,moderate
+418,Write a Python function for Fibonacci series,moderate
+419,Write a Python script to read a file,moderate
+420,Write a Python script to sort a list,moderate
+421,Write a Java program for addition,moderate
+422,Write a Java program to check even or odd,moderate
+423,Write a program to find largest number in list,moderate
+424,Explain machine learning with example,moderate
+425,Explain deep learning basics,moderate
+426,Explain cloud computing benefits,moderate
+427,Explain API lifecycle,moderate
+428,Explain database normalization,moderate
+429,Explain OOP concepts,moderate
+430,Explain multithreading,moderate
+431,Explain REST API,moderate
+432,Explain HTTP vs HTTPS,moderate
+433,Explain TCP vs UDP,moderate
+434,Write a Python function to add two numbers,moderate
+435,Write a Python function to check palindrome,moderate
+436,Write a Python function to reverse a string,moderate
+437,Write a Python function to find factorial,moderate
+438,Write a Python function for Fibonacci series,moderate
+439,Write a Python script to read a file,moderate
+440,Write a Python script to sort a list,moderate
+441,Write a Java program for addition,moderate
+442,Write a Java program to check even or odd,moderate
+443,Write a program to find largest number in list,moderate
+444,Explain machine learning with example,moderate
+445,Explain deep learning basics,moderate
+446,Explain cloud computing benefits,moderate
+447,Explain API lifecycle,moderate
+448,Explain database normalization,moderate
+449,Explain OOP concepts,moderate
+450,Explain multithreading,moderate
+451,Explain REST API,moderate
+452,Explain HTTP vs HTTPS,moderate
+453,Explain TCP vs UDP,moderate
+454,Write a Python function to add two numbers,moderate
+455,Write a Python function to check palindrome,moderate
+456,Write a Python function to reverse a string,moderate
+457,Write a Python function to find factorial,moderate
+458,Write a Python function for Fibonacci series,moderate
+459,Write a Python script to read a file,moderate
+460,Write a Python script to sort a list,moderate
+461,Write a Java program for addition,moderate
+462,Write a Java program to check even or odd,moderate
+463,Write a program to find largest number in list,moderate
+464,Explain machine learning with example,moderate
+465,Explain deep learning basics,moderate
+466,Explain cloud computing benefits,moderate
+467,Explain API lifecycle,moderate
+468,Explain database normalization,moderate
+469,Explain OOP concepts,moderate
+470,Explain multithreading,moderate
+471,Explain REST API,moderate
+472,Explain HTTP vs HTTPS,moderate
+473,Explain TCP vs UDP,moderate
+474,Write a Python function to add two numbers,moderate
+475,Write a Python function to check palindrome,moderate
+476,Write a Python function to reverse a string,moderate
+477,Write a Python function to find factorial,moderate
+478,Write a Python function for Fibonacci series,moderate
+479,Write a Python script to read a file,moderate
+480,Write a Python script to sort a list,moderate
+481,Write a Java program for addition,moderate
+482,Write a Java program to check even or odd,moderate
+483,Write a program to find largest number in list,moderate
+484,Explain machine learning with example,moderate
+485,Explain deep learning basics,moderate
+486,Explain cloud computing benefits,moderate
+487,Explain API lifecycle,moderate
+488,Explain database normalization,moderate
+489,Explain OOP concepts,moderate
+490,Explain multithreading,moderate
+491,Explain REST API,moderate
+492,Explain HTTP vs HTTPS,moderate
+493,Explain TCP vs UDP,moderate
+494,Write a Python function to add two numbers,moderate
+495,Write a Python function to check palindrome,moderate
+496,Write a Python function to reverse a string,moderate
+497,Write a Python function to find factorial,moderate
+498,Write a Python function for Fibonacci series,moderate
+499,Write a Python script to read a file,moderate
+500,Write a Python script to sort a list,moderate
+501,Write a Java program for addition,moderate
+502,Write a Java program to check even or odd,moderate
+503,Write a program to find largest number in list,moderate
+504,Explain machine learning with example,moderate
+505,Explain deep learning basics,moderate
+506,Explain cloud computing benefits,moderate
+507,Explain API lifecycle,moderate
+508,Explain database normalization,moderate
+509,Explain OOP concepts,moderate
+510,Explain multithreading,moderate
+511,Explain REST API,moderate
+512,Explain HTTP vs HTTPS,moderate
+513,Explain TCP vs UDP,moderate
+514,Write a Python function to add two numbers,moderate
+515,Write a Python function to check palindrome,moderate
+516,Write a Python function to reverse a string,moderate
+517,Write a Python function to find factorial,moderate
+518,Write a Python function for Fibonacci series,moderate
+519,Write a Python script to read a file,moderate
+520,Write a Python script to sort a list,moderate
+521,Write a Java program for addition,moderate
+522,Write a Java program to check even or odd,moderate
+523,Write a program to find largest number in list,moderate
+524,Explain machine learning with example,moderate
+525,Explain deep learning basics,moderate
+526,Explain cloud computing benefits,moderate
+527,Explain API lifecycle,moderate
+528,Explain database normalization,moderate
+529,Explain OOP concepts,moderate
+530,Explain multithreading,moderate
+531,Explain REST API,moderate
+532,Explain HTTP vs HTTPS,moderate
+533,Explain TCP vs UDP,moderate
+534,Write a Python function to add two numbers,moderate
+535,Write a Python function to check palindrome,moderate
+536,Write a Python function to reverse a string,moderate
+537,Write a Python function to find factorial,moderate
+538,Write a Python function for Fibonacci series,moderate
+539,Write a Python script to read a file,moderate
+540,Write a Python script to sort a list,moderate
+541,Write a Java program for addition,moderate
+542,Write a Java program to check even or odd,moderate
+543,Write a program to find largest number in list,moderate
+544,Explain machine learning with example,moderate
+545,Explain deep learning basics,moderate
+546,Explain cloud computing benefits,moderate
+547,Explain API lifecycle,moderate
+548,Explain database normalization,moderate
+549,Explain OOP concepts,moderate
+550,Explain multithreading,moderate
+551,Explain REST API,moderate
+552,Explain HTTP vs HTTPS,moderate
+553,Explain TCP vs UDP,moderate
+554,Write a Python function to add two numbers,moderate
+555,Write a Python function to check palindrome,moderate
+556,Write a Python function to reverse a string,moderate
+557,Write a Python function to find factorial,moderate
+558,Write a Python function for Fibonacci series,moderate
+559,Write a Python script to read a file,moderate
+560,Write a Python script to sort a list,moderate
+561,Write a Java program for addition,moderate
+562,Write a Java program to check even or odd,moderate
+563,Write a program to find largest number in list,moderate
+564,Explain machine learning with example,moderate
+565,Explain deep learning basics,moderate
+566,Explain cloud computing benefits,moderate
+567,Explain API lifecycle,moderate
+568,Explain database normalization,moderate
+569,Explain OOP concepts,moderate
+570,Explain multithreading,moderate
+571,Explain REST API,moderate
+572,Explain HTTP vs HTTPS,moderate
+573,Explain TCP vs UDP,moderate
+574,Write a Python function to add two numbers,moderate
+575,Write a Python function to check palindrome,moderate
+576,Write a Python function to reverse a string,moderate
+577,Write a Python function to find factorial,moderate
+578,Write a Python function for Fibonacci series,moderate
+579,Write a Python script to read a file,moderate
+580,Write a Python script to sort a list,moderate
+581,Write a Java program for addition,moderate
+582,Write a Java program to check even or odd,moderate
+583,Write a program to find largest number in list,moderate
+584,Explain machine learning with example,moderate
+585,Explain deep learning basics,moderate
+586,Explain cloud computing benefits,moderate
+587,Explain API lifecycle,moderate
+588,Explain database normalization,moderate
+589,Explain OOP concepts,moderate
+590,Explain multithreading,moderate
+591,Explain REST API,moderate
+592,Explain HTTP vs HTTPS,moderate
+593,Explain TCP vs UDP,moderate
+594,Write a Python function to add two numbers,moderate
+595,Write a Python function to check palindrome,moderate
+596,Write a Python function to reverse a string,moderate
+597,Write a Python function to find factorial,moderate
+598,Write a Python function for Fibonacci series,moderate
+599,Write a Python script to read a file,moderate
+600,Write a Python script to sort a list,moderate
+601,Write a Java program for addition,moderate
+602,Write a Java program to check even or odd,moderate
+603,Write a program to find largest number in list,moderate
+604,Explain machine learning with example,moderate
+605,Explain deep learning basics,moderate
+606,Explain cloud computing benefits,moderate
+607,Explain API lifecycle,moderate
+608,Explain database normalization,moderate
+609,Explain OOP concepts,moderate
+610,Explain multithreading,moderate
+611,Explain REST API,moderate
+612,Explain HTTP vs HTTPS,moderate
+613,Explain TCP vs UDP,moderate
+614,Write a Python function to add two numbers,moderate
+615,Write a Python function to check palindrome,moderate
+616,Write a Python function to reverse a string,moderate
+617,Write a Python function to find factorial,moderate
+618,Write a Python function for Fibonacci series,moderate
+619,Write a Python script to read a file,moderate
+620,Write a Python script to sort a list,moderate
+621,Write a Java program for addition,moderate
+622,Write a Java program to check even or odd,moderate
+623,Write a program to find largest number in list,moderate
+624,Explain machine learning with example,moderate
+625,Explain deep learning basics,moderate
+626,Explain cloud computing benefits,moderate
+627,Explain API lifecycle,moderate
+628,Explain database normalization,moderate
+629,Explain OOP concepts,moderate
+630,Explain multithreading,moderate
+631,Explain REST API,moderate
+632,Explain HTTP vs HTTPS,moderate
+633,Explain TCP vs UDP,moderate
+634,Write a Python function to add two numbers,moderate
+635,Write a Python function to check palindrome,moderate
+636,Write a Python function to reverse a string,moderate
+637,Write a Python function to find factorial,moderate
+638,Write a Python function for Fibonacci series,moderate
+639,Write a Python script to read a file,moderate
+640,Write a Python script to sort a list,moderate
+641,Write a Java program for addition,moderate
+642,Write a Java program to check even or odd,moderate
+643,Write a program to find largest number in list,moderate
+644,Explain machine learning with example,moderate
+645,Explain deep learning basics,moderate
+646,Explain cloud computing benefits,moderate
+647,Explain API lifecycle,moderate
+648,Explain database normalization,moderate
+649,Explain OOP concepts,moderate
+650,Explain multithreading,moderate
+651,Explain REST API,moderate
+652,Explain HTTP vs HTTPS,moderate
+653,Explain TCP vs UDP,moderate
+654,Write a Python function to add two numbers,moderate
+655,Write a Python function to check palindrome,moderate
+656,Write a Python function to reverse a string,moderate
+657,Write a Python function to find factorial,moderate
+658,Write a Python function for Fibonacci series,moderate
+659,Write a Python script to read a file,moderate
+660,Write a Python script to sort a list,moderate
+661,Write a Java program for addition,moderate
+662,Write a Java program to check even or odd,moderate
+663,Write a program to find largest number in list,moderate
+664,Explain machine learning with example,moderate
+665,Explain deep learning basics,moderate
+666,Explain cloud computing benefits,moderate
+667,Design a scalable e-commerce system,strong
+668,Design a scalable social media platform,strong
+669,Design a real-time chat application,strong
+670,Design a video streaming platform,strong
+671,Design a ride-sharing system,strong
+672,Design a banking system architecture,strong
+673,Design a recommendation system,strong
+674,Design a distributed logging system,strong
+675,Design a load balancing system,strong
+676,Design a fault-tolerant microservices system,strong
+677,Create architecture for fintech application,strong
+678,Create architecture for IoT data pipeline,strong
+679,Create architecture for real-time analytics,strong
+680,Create architecture for AI chatbot,strong
+681,Create architecture for SaaS platform,strong
+682,Create architecture for multi-tenant system,strong
+683,Create architecture for cloud deployment,strong
+684,Create architecture for event-driven system,strong
+685,Create architecture for CDN,strong
+686,Create architecture for search engine,strong
+687,Design a scalable e-commerce system,strong
+688,Design a scalable social media platform,strong
+689,Design a real-time chat application,strong
+690,Design a video streaming platform,strong
+691,Design a ride-sharing system,strong
+692,Design a banking system architecture,strong
+693,Design a recommendation system,strong
+694,Design a distributed logging system,strong
+695,Design a load balancing system,strong
+696,Design a fault-tolerant microservices system,strong
+697,Create architecture for fintech application,strong
+698,Create architecture for IoT data pipeline,strong
+699,Create architecture for real-time analytics,strong
+700,Create architecture for AI chatbot,strong
+701,Create architecture for SaaS platform,strong
+702,Create architecture for multi-tenant system,strong
+703,Create architecture for cloud deployment,strong
+704,Create architecture for event-driven system,strong
+705,Create architecture for CDN,strong
+706,Create architecture for search engine,strong
+707,Design a scalable e-commerce system,strong
+708,Design a scalable social media platform,strong
+709,Design a real-time chat application,strong
+710,Design a video streaming platform,strong
+711,Design a ride-sharing system,strong
+712,Design a banking system architecture,strong
+713,Design a recommendation system,strong
+714,Design a distributed logging system,strong
+715,Design a load balancing system,strong
+716,Design a fault-tolerant microservices system,strong
+717,Create architecture for fintech application,strong
+718,Create architecture for IoT data pipeline,strong
+719,Create architecture for real-time analytics,strong
+720,Create architecture for AI chatbot,strong
+721,Create architecture for SaaS platform,strong
+722,Create architecture for multi-tenant system,strong
+723,Create architecture for cloud deployment,strong
+724,Create architecture for event-driven system,strong
+725,Create architecture for CDN,strong
+726,Create architecture for search engine,strong
+727,Design a scalable e-commerce system,strong
+728,Design a scalable social media platform,strong
+729,Design a real-time chat application,strong
+730,Design a video streaming platform,strong
+731,Design a ride-sharing system,strong
+732,Design a banking system architecture,strong
+733,Design a recommendation system,strong
+734,Design a distributed logging system,strong
+735,Design a load balancing system,strong
+736,Design a fault-tolerant microservices system,strong
+737,Create architecture for fintech application,strong
+738,Create architecture for IoT data pipeline,strong
+739,Create architecture for real-time analytics,strong
+740,Create architecture for AI chatbot,strong
+741,Create architecture for SaaS platform,strong
+742,Create architecture for multi-tenant system,strong
+743,Create architecture for cloud deployment,strong
+744,Create architecture for event-driven system,strong
+745,Create architecture for CDN,strong
+746,Create architecture for search engine,strong
+747,Design a scalable e-commerce system,strong
+748,Design a scalable social media platform,strong
+749,Design a real-time chat application,strong
+750,Design a video streaming platform,strong
+751,Design a ride-sharing system,strong
+752,Design a banking system architecture,strong
+753,Design a recommendation system,strong
+754,Design a distributed logging system,strong
+755,Design a load balancing system,strong
+756,Design a fault-tolerant microservices system,strong
+757,Create architecture for fintech application,strong
+758,Create architecture for IoT data pipeline,strong
+759,Create architecture for real-time analytics,strong
+760,Create architecture for AI chatbot,strong
+761,Create architecture for SaaS platform,strong
+762,Create architecture for multi-tenant system,strong
+763,Create architecture for cloud deployment,strong
+764,Create architecture for event-driven system,strong
+765,Create architecture for CDN,strong
+766,Create architecture for search engine,strong
+767,Design a scalable e-commerce system,strong
+768,Design a scalable social media platform,strong
+769,Design a real-time chat application,strong
+770,Design a video streaming platform,strong
+771,Design a ride-sharing system,strong
+772,Design a banking system architecture,strong
+773,Design a recommendation system,strong
+774,Design a distributed logging system,strong
+775,Design a load balancing system,strong
+776,Design a fault-tolerant microservices system,strong
+777,Create architecture for fintech application,strong
+778,Create architecture for IoT data pipeline,strong
+779,Create architecture for real-time analytics,strong
+780,Create architecture for AI chatbot,strong
+781,Create architecture for SaaS platform,strong
+782,Create architecture for multi-tenant system,strong
+783,Create architecture for cloud deployment,strong
+784,Create architecture for event-driven system,strong
+785,Create architecture for CDN,strong
+786,Create architecture for search engine,strong
+787,Design a scalable e-commerce system,strong
+788,Design a scalable social media platform,strong
+789,Design a real-time chat application,strong
+790,Design a video streaming platform,strong
+791,Design a ride-sharing system,strong
+792,Design a banking system architecture,strong
+793,Design a recommendation system,strong
+794,Design a distributed logging system,strong
+795,Design a load balancing system,strong
+796,Design a fault-tolerant microservices system,strong
+797,Create architecture for fintech application,strong
+798,Create architecture for IoT data pipeline,strong
+799,Create architecture for real-time analytics,strong
+800,Create architecture for AI chatbot,strong
+801,Create architecture for SaaS platform,strong
+802,Create architecture for multi-tenant system,strong
+803,Create architecture for cloud deployment,strong
+804,Create architecture for event-driven system,strong
+805,Create architecture for CDN,strong
+806,Create architecture for search engine,strong
+807,Design a scalable e-commerce system,strong
+808,Design a scalable social media platform,strong
+809,Design a real-time chat application,strong
+810,Design a video streaming platform,strong
+811,Design a ride-sharing system,strong
+812,Design a banking system architecture,strong
+813,Design a recommendation system,strong
+814,Design a distributed logging system,strong
+815,Design a load balancing system,strong
+816,Design a fault-tolerant microservices system,strong
+817,Create architecture for fintech application,strong
+818,Create architecture for IoT data pipeline,strong
+819,Create architecture for real-time analytics,strong
+820,Create architecture for AI chatbot,strong
+821,Create architecture for SaaS platform,strong
+822,Create architecture for multi-tenant system,strong
+823,Create architecture for cloud deployment,strong
+824,Create architecture for event-driven system,strong
+825,Create architecture for CDN,strong
+826,Create architecture for search engine,strong
+827,Design a scalable e-commerce system,strong
+828,Design a scalable social media platform,strong
+829,Design a real-time chat application,strong
+830,Design a video streaming platform,strong
+831,Design a ride-sharing system,strong
+832,Design a banking system architecture,strong
+833,Design a recommendation system,strong
+834,Design a distributed logging system,strong
+835,Design a load balancing system,strong
+836,Design a fault-tolerant microservices system,strong
+837,Create architecture for fintech application,strong
+838,Create architecture for IoT data pipeline,strong
+839,Create architecture for real-time analytics,strong
+840,Create architecture for AI chatbot,strong
+841,Create architecture for SaaS platform,strong
+842,Create architecture for multi-tenant system,strong
+843,Create architecture for cloud deployment,strong
+844,Create architecture for event-driven system,strong
+845,Create architecture for CDN,strong
+846,Create architecture for search engine,strong
+847,Design a scalable e-commerce system,strong
+848,Design a scalable social media platform,strong
+849,Design a real-time chat application,strong
+850,Design a video streaming platform,strong
+851,Design a ride-sharing system,strong
+852,Design a banking system architecture,strong
+853,Design a recommendation system,strong
+854,Design a distributed logging system,strong
+855,Design a load balancing system,strong
+856,Design a fault-tolerant microservices system,strong
+857,Create architecture for fintech application,strong
+858,Create architecture for IoT data pipeline,strong
+859,Create architecture for real-time analytics,strong
+860,Create architecture for AI chatbot,strong
+861,Create architecture for SaaS platform,strong
+862,Create architecture for multi-tenant system,strong
+863,Create architecture for cloud deployment,strong
+864,Create architecture for event-driven system,strong
+865,Create architecture for CDN,strong
+866,Create architecture for search engine,strong
+867,Design a scalable e-commerce system,strong
+868,Design a scalable social media platform,strong
+869,Design a real-time chat application,strong
+870,Design a video streaming platform,strong
+871,Design a ride-sharing system,strong
+872,Design a banking system architecture,strong
+873,Design a recommendation system,strong
+874,Design a distributed logging system,strong
+875,Design a load balancing system,strong
+876,Design a fault-tolerant microservices system,strong
+877,Create architecture for fintech application,strong
+878,Create architecture for IoT data pipeline,strong
+879,Create architecture for real-time analytics,strong
+880,Create architecture for AI chatbot,strong
+881,Create architecture for SaaS platform,strong
+882,Create architecture for multi-tenant system,strong
+883,Create architecture for cloud deployment,strong
+884,Create architecture for event-driven system,strong
+885,Create architecture for CDN,strong
+886,Create architecture for search engine,strong
+887,Design a scalable e-commerce system,strong
+888,Design a scalable social media platform,strong
+889,Design a real-time chat application,strong
+890,Design a video streaming platform,strong
+891,Design a ride-sharing system,strong
+892,Design a banking system architecture,strong
+893,Design a recommendation system,strong
+894,Design a distributed logging system,strong
+895,Design a load balancing system,strong
+896,Design a fault-tolerant microservices system,strong
+897,Create architecture for fintech application,strong
+898,Create architecture for IoT data pipeline,strong
+899,Create architecture for real-time analytics,strong
+900,Create architecture for AI chatbot,strong
+901,Create architecture for SaaS platform,strong
+902,Create architecture for multi-tenant system,strong
+903,Create architecture for cloud deployment,strong
+904,Create architecture for event-driven system,strong
+905,Create architecture for CDN,strong
+906,Create architecture for search engine,strong
+907,Design a scalable e-commerce system,strong
+908,Design a scalable social media platform,strong
+909,Design a real-time chat application,strong
+910,Design a video streaming platform,strong
+911,Design a ride-sharing system,strong
+912,Design a banking system architecture,strong
+913,Design a recommendation system,strong
+914,Design a distributed logging system,strong
+915,Design a load balancing system,strong
+916,Design a fault-tolerant microservices system,strong
+917,Create architecture for fintech application,strong
+918,Create architecture for IoT data pipeline,strong
+919,Create architecture for real-time analytics,strong
+920,Create architecture for AI chatbot,strong
+921,Create architecture for SaaS platform,strong
+922,Create architecture for multi-tenant system,strong
+923,Create architecture for cloud deployment,strong
+924,Create architecture for event-driven system,strong
+925,Create architecture for CDN,strong
+926,Create architecture for search engine,strong
+927,Design a scalable e-commerce system,strong
+928,Design a scalable social media platform,strong
+929,Design a real-time chat application,strong
+930,Design a video streaming platform,strong
+931,Design a ride-sharing system,strong
+932,Design a banking system architecture,strong
+933,Design a recommendation system,strong
+934,Design a distributed logging system,strong
+935,Design a load balancing system,strong
+936,Design a fault-tolerant microservices system,strong
+937,Create architecture for fintech application,strong
+938,Create architecture for IoT data pipeline,strong
+939,Create architecture for real-time analytics,strong
+940,Create architecture for AI chatbot,strong
+941,Create architecture for SaaS platform,strong
+942,Create architecture for multi-tenant system,strong
+943,Create architecture for cloud deployment,strong
+944,Create architecture for event-driven system,strong
+945,Create architecture for CDN,strong
+946,Create architecture for search engine,strong
+947,Design a scalable e-commerce system,strong
+948,Design a scalable social media platform,strong
+949,Design a real-time chat application,strong
+950,Design a video streaming platform,strong
+951,Design a ride-sharing system,strong
+952,Design a banking system architecture,strong
+953,Design a recommendation system,strong
+954,Design a distributed logging system,strong
+955,Design a load balancing system,strong
+956,Design a fault-tolerant microservices system,strong
+957,Create architecture for fintech application,strong
+958,Create architecture for IoT data pipeline,strong
+959,Create architecture for real-time analytics,strong
+960,Create architecture for AI chatbot,strong
+961,Create architecture for SaaS platform,strong
+962,Create architecture for multi-tenant system,strong
+963,Create architecture for cloud deployment,strong
+964,Create architecture for event-driven system,strong
+965,Create architecture for CDN,strong
+966,Create architecture for search engine,strong
+967,Design a scalable e-commerce system,strong
+968,Design a scalable social media platform,strong
+969,Design a real-time chat application,strong
+970,Design a video streaming platform,strong
+971,Design a ride-sharing system,strong
+972,Design a banking system architecture,strong
+973,Design a recommendation system,strong
+974,Design a distributed logging system,strong
+975,Design a load balancing system,strong
+976,Design a fault-tolerant microservices system,strong
+977,Create architecture for fintech application,strong
+978,Create architecture for IoT data pipeline,strong
+979,Create architecture for real-time analytics,strong
+980,Create architecture for AI chatbot,strong
+981,Create architecture for SaaS platform,strong
+982,Create architecture for multi-tenant system,strong
+983,Create architecture for cloud deployment,strong
+984,Create architecture for event-driven system,strong
+985,Create architecture for CDN,strong
+986,Create architecture for search engine,strong
+987,Design a scalable e-commerce system,strong
+988,Design a scalable social media platform,strong
+989,Design a real-time chat application,strong
+990,Design a video streaming platform,strong
+991,Design a ride-sharing system,strong
+992,Design a banking system architecture,strong
+993,Design a recommendation system,strong
+994,Design a distributed logging system,strong
+995,Design a load balancing system,strong
+996,Design a fault-tolerant microservices system,strong
+997,Create architecture for fintech application,strong
+998,Create architecture for IoT data pipeline,strong
+999,Create architecture for real-time analytics,strong
+1000,Create architecture for AI chatbot,strong

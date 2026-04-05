@@ -1,0 +1,109 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [3 0 R 5 0 R] >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 4 0 R >>
+endobj
+4 0 obj
+<< /Length 5795 >>
+stream
+BT /F2 18 Tf 42 756 Td (LLM Router MVP Interview Q&A) Tj ET
+BT /F2 11 Tf 42 722 Td (1. WHY DID YOU CHOOSE A CLASSIFIER BEFORE GENERATION INSTEAD OF ROUTING WITH HAND-WRITTEN RULES ONLY?) Tj ET
+BT /F1 9 Tf 42 708 Td (I wanted routing decisions that scale beyond a few obvious keywords. Hand-written rules are) Tj ET
+BT /F1 9 Tf 42 697 Td (easy to start with, but they become brittle as prompt variety grows. A classifier lets the) Tj ET
+BT /F1 9 Tf 42 686 Td (system learn patterns from labeled examples, improves consistency, and creates a path for) Tj ET
+BT /F1 9 Tf 42 675 Td (retraining as new prompt types appear.) Tj ET
+BT /F2 11 Tf 42 654 Td (2. WHY USE TF-IDF + LOGISTIC REGRESSION OVER EMBEDDINGS OR AN LLM JUDGE FOR THE MVP?) Tj ET
+BT /F1 9 Tf 42 640 Td (For an MVP, TF-IDF + Logistic Regression is fast, cheap, interpretable, and easy to train on a) Tj ET
+BT /F1 9 Tf 42 629 Td (small labeled dataset. It is also lightweight enough to run locally with low latency.) Tj ET
+BT /F1 9 Tf 42 618 Td (Embeddings or an LLM judge could improve flexibility later, but they would increase) Tj ET
+BT /F1 9 Tf 42 607 Td (complexity, cost, and operational dependencies too early.) Tj ET
+BT /F2 11 Tf 42 586 Td (3. WHY DID YOU CALIBRATE THE CLASSIFIER, AND HOW DOES CALIBRATION IMPROVE ROUTING QUALITY?) Tj ET
+BT /F1 9 Tf 42 572 Td (The router does not only need the predicted label, it also needs a reliable confidence score.) Tj ET
+BT /F1 9 Tf 42 561 Td (Calibration makes the predicted probabilities more trustworthy, which matters because low-) Tj ET
+BT /F1 9 Tf 42 550 Td (confidence cases are escalated to the strong model. Without calibration, fallback decisions) Tj ET
+BT /F1 9 Tf 42 539 Td (would be less stable and could either waste money or hurt answer quality.) Tj ET
+BT /F2 11 Tf 42 518 Td (4. WHY IS THE FALLBACK THRESHOLD `0.55`, AND HOW WOULD YOU TUNE IT IN PRODUCTION?) Tj ET
+BT /F1 9 Tf 42 504 Td (`0.55` is a practical MVP starting point that gives the router some caution without sending) Tj ET
+BT /F1 9 Tf 42 493 Td (too many prompts to the expensive tier. In production, I would tune it using offline) Tj ET
+BT /F1 9 Tf 42 482 Td (evaluation plus real traffic analysis by measuring the tradeoff between cost, latency, and) Tj ET
+BT /F1 9 Tf 42 471 Td (routing mistakes. The right threshold depends on business tolerance for bad answers versus API) Tj ET
+BT /F1 9 Tf 42 460 Td (spend.) Tj ET
+BT /F2 11 Tf 42 439 Td (5. HOW DO YOU BALANCE LATENCY, QUALITY, AND COST ACROSS WEAK, MODERATE, AND STRONG MODELS?) Tj ET
+BT /F1 9 Tf 42 425 Td (The main idea is to reserve expensive capacity for prompts that actually need it. Weak prompts) Tj ET
+BT /F1 9 Tf 42 414 Td (go to the cheapest local model, moderate prompts go to a stronger local model, and strong or) Tj ET
+BT /F1 9 Tf 42 403 Td (uncertain prompts go to the cloud model. That gives low latency and near-zero cost for simpler) Tj ET
+BT /F1 9 Tf 42 392 Td (work while protecting quality on complex requests.) Tj ET
+BT /F2 11 Tf 42 371 Td (6. WHY USE OLLAMA FOR LOCAL MODELS AND OPENAI/GEMINI FOR THE STRONG TIER?) Tj ET
+BT /F1 9 Tf 42 357 Td (Ollama is a good fit for local inference because it is simple to run, supports multiple local) Tj ET
+BT /F1 9 Tf 42 346 Td (models, and keeps cheap requests off paid APIs. OpenAI and Gemini are good strong-tier options) Tj ET
+BT /F1 9 Tf 42 335 Td (because they provide high-quality frontier models through stable APIs. This hybrid design) Tj ET
+BT /F1 9 Tf 42 324 Td (keeps the architecture flexible and demonstrates vendor-agnostic routing.) Tj ET
+BT /F2 11 Tf 42 303 Td (7. WHAT HAPPENS WHEN A LOCAL MODEL OR API PROVIDER IS UNAVAILABLE?) Tj ET
+BT /F1 9 Tf 42 289 Td (The current code catches request failures and returns an availability message instead of) Tj ET
+BT /F1 9 Tf 42 278 Td (crashing the service. That keeps the API responsive and makes failures visible in the logs. A) Tj ET
+BT /F1 9 Tf 42 267 Td (stronger production version would also add retries, circuit breaking, health-based provider) Tj ET
+BT /F1 9 Tf 42 256 Td (failover, and clearer user-facing error policies.) Tj ET
+BT /F2 11 Tf 42 235 Td (8. WHY STORE LOGS IN SQLITE FIRST, AND WHEN WOULD YOU MOVE TO POSTGRES?) Tj ET
+BT /F1 9 Tf 42 221 Td (SQLite is perfect for an MVP because it has zero setup overhead, works well for local demos,) Tj ET
+BT /F1 9 Tf 42 210 Td (and still gives durable analytics. I would move to Postgres when write concurrency increases,) Tj ET
+BT /F1 9 Tf 42 199 Td (when multiple services need shared access, or when I need stronger querying, indexing, and) Tj ET
+BT /F1 9 Tf 42 188 Td (operational reliability.) Tj ET
+BT /F2 11 Tf 42 167 Td (9. HOW WOULD YOU DETECT MISROUTES AND USE THE LOGGED DATA FOR RETRAINING?) Tj ET
+BT /F1 9 Tf 42 153 Td (I would review low-confidence cases, fallback-heavy cases, bad user outcomes, and prompts) Tj ET
+BT /F1 9 Tf 42 142 Td (whose final answer quality did not match the predicted class. Those examples become high-value) Tj ET
+BT /F1 9 Tf 42 131 Td (labeled data for the next training cycle. Over time, the router improves because logging turns) Tj ET
+BT /F1 9 Tf 42 120 Td (production traffic into a feedback loop for error analysis and retraining.) Tj ET
+BT /F2 11 Tf 42 99 Td (10. HOW WOULD YOU EXPAND THE ROUTER TO SUPPORT MORE CLASSES, TENANTS, OR PROVIDERS?) Tj ET
+BT /F1 9 Tf 42 85 Td (I would separate routing policy from provider integration more clearly, so classes,) Tj ET
+BT /F1 9 Tf 42 74 Td (thresholds, and model maps can be configured instead of hard-coded. For tenants, I would) Tj ET
+BT /F1 9 Tf 42 63 Td (support per-tenant policies, budgets, and model preferences. For providers, I would add a) Tj ET
+BT /F1 9 Tf 42 52 Td (provider abstraction so new backends can be plugged in without changing the API contract.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 7 0 R /F2 8 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 1312 >>
+stream
+BT /F2 11 Tf 42 746 Td (11. WHAT ARE THE MAIN RISKS OF THIS ARCHITECTURE, AND HOW WOULD YOU MITIGATE THEM?) Tj ET
+BT /F1 9 Tf 42 732 Td (The biggest risks are classifier drift, overconfidence, provider outages, and SQLite limits) Tj ET
+BT /F1 9 Tf 42 721 Td (under concurrency. I would mitigate them with better monitoring, periodic retraining,) Tj ET
+BT /F1 9 Tf 42 710 Td (threshold tuning, provider failover, and eventually moving persistence to Postgres. Another) Tj ET
+BT /F1 9 Tf 42 699 Td (risk is that complexity labels may not perfectly capture answer quality, so I would add human) Tj ET
+BT /F1 9 Tf 42 688 Td (review or quality scoring for important traffic.) Tj ET
+BT /F2 11 Tf 42 667 Td (12. IF TRAFFIC GROWS, WHICH LAYER WOULD YOU SCALE OR REDESIGN FIRST?) Tj ET
+BT /F1 9 Tf 42 653 Td (I would first address persistence and routing operations before replacing the classifier.) Tj ET
+BT /F1 9 Tf 42 642 Td (SQLite would be the earliest bottleneck under concurrent writes, so I would move to Postgres) Tj ET
+BT /F1 9 Tf 42 631 Td (and add better observability. After that, I would look at async request handling, caching,) Tj ET
+BT /F1 9 Tf 42 620 Td (queueing for expensive calls, and possibly a richer router if prompt diversity outgrows the) Tj ET
+BT /F1 9 Tf 42 609 Td (current classifier.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000121 00000 n 
+0000000257 00000 n 
+0000006104 00000 n 
+0000006240 00000 n 
+0000007604 00000 n 
+0000007674 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+7749
+%%EOF
